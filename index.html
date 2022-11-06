@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=
+        1.0,minimum-scale=1.0">
+    <!-- 初始化文件 -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 引入index样式文件 -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header class="app">
+        <ul>
+            <li><img src="images/close.png" alt=""></li>
+            <li><img src="images/logo.png" alt=""></li>
+            <li>打开京东App，购物更轻松</li>
+            <li>立即打开</li>
+        </ul>
+    </header>
+
+    <!-- 搜索 -->
+    <div class="search-wrap">
+        <div class="search-btn"></div>
+        <div class="search-login">登录</div>
+        <div class="search-input">
+            <div class="jd-icon"></div>
+            <div class="sou"></div>
+            <div class="search">
+                <input value="" maxlength="20" name="keyword" id="msKeyWord" type="text" cleardefault="no"
+                    autocomplete="off" placeholder="汽车香水" class="hilight2">
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="mainContent">
+        <!-- 滑动图 -->
+        <div class="slider">
+            <img src="upload/banner.jpg" alt="">
+        </div>
+
+        <!-- 热点图 -->
+        <div class="brand">
+            <div><a href="#"><img src="upload/hot-pic1.png" alt=""></a></div>
+            <div><a href="#"><img src="upload/hot-pic2.png" alt=""></a></div>
+            <div><a href="#"><img src="upload/hot-pic3.png" alt=""></a></div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="nav">
+            <a href=""><img src="upload/navIcon1.png" alt=""><span>京东超市</span></a>
+            <a href=""><img src="upload/navIcon2.png" alt=""><span>数码家电</span></a>
+            <a href=""><img src="upload/navIcon3.png" alt=""><span>京东新百货</span></a>
+            <a href=""><img src="upload/navIcon4.png" alt=""><span>京东生鲜</span></a>
+            <a href=""><img src="upload/navIcon5.png" alt=""><span>京东到家</span></a>
+            <a href=""><img src="upload/navIcon6.png" alt=""><span>充值缴费</span></a>
+            <a href=""><img src="upload/navIcon7.png" alt=""><span>附近好店</span></a>
+            <a href=""><img src="upload/navIcon8.png" alt=""><span>领券</span></a>
+            <a href=""><img src="upload/navIcon9.png" alt=""><span>领金贴</span></a>
+            <a href=""><img src="upload/navIcon10.png" alt=""><span>PLUS会员</span></a>
+        </div>
+
+        <!-- 轮播图 -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/banner.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- 引入js文件 -->
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
